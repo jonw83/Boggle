@@ -5,9 +5,9 @@ def make_grid(width, height):
     """
     Make an empty boggle grid. For zero leave curly brackets empty. For a grid that will hold all the tiles in a boggle game:
     """
-    return {(row, column): choice(ascii_uppercase) 
+    return {(row, col): choice(ascii_uppercase) 
         for row in range(height)
-        for column in range(width)}
+        for col in range(width)}
     """
     We create a dictionary {} with row and column tuples as the key and a choice as the value for generating a random uppercase letter.
     """
